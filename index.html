@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172554">
+  <meta name="description" content="B&P Servicio Técnico: mantenimiento del hogar y reparación de electrodomésticos. Electricidad, plomería, pintura, griferías, baños, lavarropas, aires acondicionados y más. Zona Norte. Consultá por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="B&P Servicio Técnico | Tu hogar en buenas manos">
+  <meta property="og:description" content="Mantenimiento del hogar y reparación de electrodomésticos en Zona Norte. Consultá sin compromiso.">
+  <meta property="og:image" content="https://iili.io/negM1ON.png">
+  <meta property="og:image:secure_url" content="https://iili.io/negM1ON.png">
+  <meta property="og:image:alt" content="Logo de B&P Servicio Técnico">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="B&P Servicio Técnico | Tu hogar en buenas manos">
+  <meta name="twitter:description" content="Mantenimiento del hogar y reparación de electrodomésticos en Zona Norte.">
+  <meta name="twitter:image" content="https://iili.io/negM1ON.png">
+  <title>B&P Servicio Técnico | Mantenimiento del hogar y electrodomésticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#172554;--navy2:#0b1538;--blue:#315cf5;--yellow:#b8f34a;--ink:#172033;--muted:#68738a;--light:#f4f6ff;--white:#fff;--line:#e1e6f2;--radius:22px;--shadow:0 18px 48px rgba(23,37,84,.13)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+    .topbar{background:var(--navy2);color:#eaf2ff;font-size:.83rem}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:9px 0}
+    .topbar strong{color:var(--yellow)}
+    .top-right{display:flex;gap:18px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(226,234,243,.85)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;min-width:max-content}
+    .brand-logo{width:116px;height:58px;object-fit:contain;object-position:left center}
+    .hero-logo{display:block;width:min(245px,70%);height:auto;max-height:120px;object-fit:contain;object-position:left center;margin:0 0 20px;filter:drop-shadow(0 5px 15px rgba(0,0,0,.18))}
+    .footer-logo{width:150px;height:auto;max-height:82px;object-fit:contain;object-position:left center;margin-bottom:15px}
+    .brand-mark{width:47px;height:43px;background:var(--navy);color:var(--yellow);display:grid;place-items:center;clip-path:polygon(50% 0,100% 35%,100% 100%,0 100%,0 35%);padding-top:7px}
+    .brand-mark svg{width:29px;height:29px}
+    .brand-name{font-family:Manrope,sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.04em;color:var(--navy);font-size:1.4rem}
+    .brand-name small{display:block;font:700 .63rem "DM Sans",sans-serif;letter-spacing:.12em;color:#617086;margin-top:5px}
+    .nav-links{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:700;color:#30435d}
+    .nav-links a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 21px;font-weight:800;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-yellow{background:var(--yellow);color:var(--navy2);box-shadow:0 8px 20px rgba(244,162,97,.24)}
+    .btn-yellow:hover{background:#f7b47e}
+    .btn-outline{border:1px solid rgba(255,255,255,.48);color:#fff;background:rgba(255,255,255,.08)}
+    .btn-blue{background:var(--navy);color:#fff}
+    .btn svg{width:19px;height:19px;flex-shrink:0}
+    .menu-toggle{display:none;border:0;background:var(--light);color:var(--navy);border-radius:12px;width:46px;height:46px;cursor:pointer}
+    .hero{background:var(--navy2);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+    .hero-grid{display:flex;align-items:center;min-height:690px;position:relative;gap:0;padding-top:60px;padding-bottom:70px}
+    .hero-grid:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(8,18,42,.88) 0%,rgba(8,18,42,.72) 43%,rgba(8,18,42,.2) 100%)}
+    .hero-copy{position:relative;z-index:3;padding:30px 0;max-width:650px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--yellow);font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .eyebrow:before{content:"";height:3px;width:28px;background:var(--yellow);border-radius:4px}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.045em}
+    h1{font-size:clamp(2.65rem,5vw,4.65rem);line-height:1.02;margin:20px 0}
+    h1 span{color:var(--yellow)}
+    .hero-copy>p{font-size:1.08rem;color:#d7e4f5;max-width:510px;line-height:1.8}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+    .hero-points{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;color:#d8e6f8;font-size:.86rem}
+    .hero-points span{display:flex;align-items:center;gap:8px}
+    .check-dot{width:21px;height:21px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--navy);font-weight:900;font-size:.75rem}
+    .hero-visual{position:absolute;inset:0;z-index:0;min-width:0}
+    .hero-frame{height:100%;min-height:100%;position:absolute;inset:0;overflow:hidden;border-radius:0;border:0;box-shadow:none;background:#172554}
+    .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
+    .hero-slide.active{opacity:1}
+    .hero-slide img{width:100%;height:100%;object-fit:cover}
+    .hero-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,18,42,.35),rgba(8,18,42,.08) 65%,rgba(8,18,42,.12))}
+    .slide-caption{position:absolute;z-index:2;left:28px;right:28px;bottom:30px}
+    .slide-caption{position:absolute;right:34px;bottom:28px;left:auto;max-width:320px;z-index:2;text-align:right;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+    .slide-caption h2{font-size:1.25rem;margin:5px 0}
+    .slide-caption p{font-size:.85rem;margin:0;color:#eef2ff}
+    .slide-caption span{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:800;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;padding:6px 10px;border-radius:6px;margin-bottom:10px}
+    .slide-caption h2{font-size:clamp(1.6rem,3vw,2.4rem);margin:0 0 4px}
+    .slide-caption p{margin:0;color:#e1ebf8}
+    .hero-controls{display:flex;align-items:center;gap:9px;position:absolute;right:28px;top:28px;z-index:4}
+    .slide-dot{border:0;width:9px;height:9px;border-radius:99px;background:rgba(255,255,255,.6);padding:0;cursor:pointer;transition:width .2s}
+    .slide-dot.active{width:27px;background:var(--yellow)}
+    .hero-stamp{display:none}
+    .trust-strip{background:#fff;position:relative;z-index:3;margin-top:-1px}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:24px 0;border-bottom:1px solid var(--line)}
+    .trust-item{display:flex;align-items:center;justify-content:center;gap:13px;padding:5px 14px;border-right:1px solid var(--line)}
+    .trust-item:last-child{border:0}
+    .trust-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:#e1f1ed;color:var(--navy);flex-shrink:0}
+    .trust-icon svg{width:23px;height:23px}
+    .trust-item strong{display:block;font-size:.9rem;color:var(--navy)}
+    .trust-item small{display:block;color:var(--muted);font-size:.75rem}
+    section{padding:92px 0}
+    .section-head{max-width:720px;margin:0 auto 42px;text-align:center}
+    .section-kicker{font-size:.77rem;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:var(--blue)}
+    h2.section-title{font-size:clamp(2rem,4vw,3.15rem);line-height:1.1;margin:12px 0 16px;color:var(--navy)}
+    .section-head p{color:var(--muted);font-size:1.03rem;margin:0}
+    .services-section{background:var(--light)}
+    .service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:19px}
+    .service-card{background:#fff;border:1px solid #e6edf5;border-radius:19px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+    .service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .service-image{height:190px;overflow:hidden;background:#dbe6f1;position:relative}
+    .service-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .service-card:hover .service-image img{transform:scale(1.05)}
+    .service-image .num{position:absolute;left:13px;top:13px;width:34px;height:34px;border-radius:11px;background:var(--yellow);color:var(--navy);display:grid;place-items:center;font-weight:900}
+    .service-content{padding:21px}
+    .service-content h3{font-size:1.15rem;margin:0 0 8px;color:var(--navy);letter-spacing:-.025em}
+    .service-content p{font-size:.88rem;color:var(--muted);margin:0 0 17px;min-height:68px}
+    .text-link{font-size:.86rem;font-weight:900;color:var(--blue);display:inline-flex;align-items:center;gap:7px}
+    .text-link:hover{gap:11px}
+    .text-link svg{width:16px;height:16px}
+    .appliances-section{background:#fff}
+    .appliance-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:19px}
+    .appliance-card{border-radius:20px;overflow:hidden;position:relative;min-height:315px;background:#dce7f1;isolation:isolate}
+    .appliance-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s}
+    .appliance-card:hover img{transform:scale(1.06)}
+    .appliance-card:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(transparent,rgba(3,20,44,.93));z-index:-1}
+    .appliance-card-content{position:absolute;left:20px;right:18px;bottom:20px;color:#fff}
+    .appliance-card-content .mini-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--yellow)}
+    .appliance-card h3{font-size:1.35rem;margin:5px 0}
+    .appliance-card p{font-size:.84rem;color:#e3ebf6;margin:0}
+    .wide-cta{padding:0 0 90px;background:#fff}
+    .cta-panel{background:var(--navy);color:#fff;border-radius:28px;padding:42px 48px;display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative;overflow:hidden}
+    .cta-panel:after{content:"";position:absolute;width:280px;height:280px;border:38px solid rgba(244,162,97,.12);border-radius:50%;right:25%;top:-180px}
+    .cta-panel h2{font-size:clamp(1.7rem,3vw,2.6rem);margin:0 0 9px;position:relative;z-index:1}
+    .cta-panel p{margin:0;color:#d7e4f5;position:relative;z-index:1}
+    .cta-panel .btn{position:relative;z-index:2;flex-shrink:0}
+    .why-section{background:var(--light)}
+    .why-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .why-photo{position:relative;min-height:510px;border-radius:26px;overflow:hidden;background:#dce7f1}
+    .why-photo img{position:absolute;width:100%;height:100%;object-fit:cover}
+    .why-photo-badge{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.96);color:var(--navy);padding:8px 12px;border-radius:9px;font-size:.78rem;font-weight:800;max-width:190px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+    .why-copy .section-kicker{display:block}
+    .why-copy h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;color:var(--navy);margin:12px 0 17px}
+    .why-copy>p{color:var(--muted)}
+    .benefit-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+    .benefit{display:flex;align-items:flex-start;gap:12px}
+    .benefit-icon{width:38px;height:38px;display:grid;place-items:center;background:#e1f1ed;border-radius:12px;color:var(--navy);flex-shrink:0}
+    .benefit-icon svg{width:20px;height:20px}
+    .benefit strong{display:block;color:var(--navy);font-size:.95rem}
+    .benefit p{font-size:.81rem;color:var(--muted);margin:3px 0 0}
+    .process-section{background:#fff}
+    .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+    .process-card{padding:27px;border:1px solid var(--line);border-radius:20px}
+    .process-num{width:45px;height:45px;border-radius:14px;background:var(--yellow);color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:1.15rem;margin-bottom:20px}
+    .process-card h3{color:var(--navy);font-size:1.15rem;margin-bottom:8px}
+    .process-card p{color:var(--muted);font-size:.9rem;margin:0}
+    .coverage{background:var(--navy2);color:#fff;padding:66px 0}
+    .coverage-layout{display:flex;align-items:center;justify-content:space-between;gap:35px}
+    .coverage .section-kicker{color:var(--yellow)}
+    .coverage h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:10px 0}
+    .coverage p{color:#d2e0f2;max-width:670px;margin:0}
+    .coverage .btn{flex-shrink:0}
+    .contact-section{background:#fff}
+    .contact-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:stretch}
+    .contact-copy{background:var(--light);padding:36px;border-radius:24px}
+    .contact-copy h2{color:var(--navy);font-size:2.3rem;line-height:1.1;margin:12px 0}
+    .contact-copy>p{color:var(--muted)}
+    .contact-line{display:flex;gap:14px;align-items:center;margin-top:24px}
+    .contact-line .trust-icon{background:#fff}
+    .contact-line strong{display:block;color:var(--navy)}
+    .contact-line small{display:block;color:var(--muted)}
+    .contact-card{border:1px solid var(--line);border-radius:24px;padding:36px;box-shadow:var(--shadow)}
+    .contact-card h3{color:var(--navy);font-size:1.5rem;margin-bottom:8px}
+    .contact-card p{color:var(--muted);font-size:.93rem}
+    .contact-card .btn{width:100%;margin-top:12px}
+    .contact-note{font-size:.78rem!important;text-align:center;margin:13px 0 0}
+    footer{background:#04172f;color:#d1deef;padding:42px 0 22px}
+    .footer-main{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;padding-bottom:30px}
+    .footer-brand .brand-name{color:#fff}
+    .footer-brand .brand-name small{color:#b5c8df}
+    .footer-brand p{max-width:360px;color:#b5c8df;font-size:.88rem;margin:18px 0 0}
+    .footer-links h3{font-size:.95rem;color:#fff;letter-spacing:0;margin-bottom:12px}
+    .footer-links a{display:block;font-size:.86rem;color:#b5c8df;margin:8px 0}
+    .footer-links a:hover{color:var(--yellow)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.13);padding-top:19px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:.78rem;color:#9eb2cc}
+    .footer-bottom a{color:var(--yellow)}
+    .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:70;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#20c66a;color:#fff;box-shadow:0 10px 28px rgba(0,0,0,.25);transition:transform .2s}
+    .whatsapp-float:hover{transform:scale(1.08)}
+    .whatsapp-float,.mobile-cta{transition:opacity .22s ease,visibility .22s ease,transform .22s ease}
+    .whatsapp-float.footer-hidden,.mobile-cta.footer-hidden{opacity:0;visibility:hidden;pointer-events:none;transform:translateY(12px)}
+    .whatsapp-float svg{width:31px;height:31px}
+    .mobile-cta{display:none}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.hero-slide,.service-image img,.appliance-card img{transition:none}.reveal{opacity:1;transform:none}}
+    @media(max-width:1000px){
+      .nav-links{gap:14px}.nav-links a{font-size:.82rem}.nav>.btn{padding:12px 15px}
+      .hero-grid{display:flex;min-height:630px;gap:0}.hero-frame{height:100%;min-height:100%}
+      .service-grid,.appliance-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .service-image{height:220px}.service-content p{min-height:auto}
+      .why-layout{gap:35px}.why-photo{min-height:460px}
+    }
+    @media(max-width:760px){
+      .container{width:min(100% - 30px,560px)}
+      .topbar .container{justify-content:center}.topbar .top-right{display:none}
+      .nav{min-height:69px}.menu-toggle{display:grid;place-items:center}.nav>.btn{display:none}
+      .nav-links{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;padding:18px 22px 22px;box-shadow:0 20px 25px rgba(7,35,73,.12);flex-direction:column;align-items:stretch;gap:0;border-top:1px solid var(--line)}
+      .nav-links.open{display:flex}.nav-links a{padding:12px 4px;border-bottom:1px solid var(--line);font-size:.95rem}
+      .hero-grid{display:flex;min-height:610px;padding-top:42px;padding-bottom:48px;gap:0}
+      .hero-copy{padding:0}.hero-copy>p{font-size:1rem}
+      h1{font-size:clamp(2.6rem,12vw,4rem);margin:16px 0}
+      .hero-frame{height:100%;min-height:100%;border-radius:0}
+      .hero-stamp{display:none}
+      .slide-caption{display:none}
+      .trust-grid{grid-template-columns:1fr 1fr;padding:15px 0}
+      .trust-item{justify-content:flex-start;border-right:0;padding:12px 4px}
+      .trust-item:nth-child(odd){border-right:1px solid var(--line)}
+      .trust-icon{width:38px;height:38px}
+      section{padding:68px 0}.section-head{margin-bottom:30px}
+      .service-grid{gap:13px}.service-image{height:155px}
+      .service-content{padding:16px}.service-content h3{font-size:1.02rem}.service-content p{font-size:.82rem}
+      .appliance-grid{gap:13px}.appliance-card{min-height:255px;border-radius:16px}
+      .appliance-card-content{left:15px;right:13px;bottom:15px}.appliance-card h3{font-size:1.13rem}
+      .cta-panel{padding:30px 24px;align-items:flex-start;flex-direction:column;border-radius:22px}
+      .wide-cta{padding-bottom:68px}
+      .why-layout,.contact-layout{grid-template-columns:1fr;gap:28px}
+      .why-photo{min-height:350px;order:2}
+      .benefit-list{gap:17px}
+      .process-grid{grid-template-columns:1fr;gap:13px}.process-card{padding:22px}
+      .coverage-layout{align-items:flex-start;flex-direction:column}
+      .contact-copy,.contact-card{padding:26px}
+      .contact-copy h2{font-size:2rem}
+      .footer-main{flex-direction:column}
+      .footer-bottom{flex-direction:column}
+      .whatsapp-float{width:55px;height:55px;right:15px;bottom:82px}
+      .mobile-cta{position:fixed;display:flex;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid var(--line);z-index:60}
+      .mobile-cta .btn{width:100%;padding:13px}
+      footer{padding-bottom:95px}
+    }
+    @media(max-width:390px){.service-grid,.appliance-grid{grid-template-columns:1fr}.service-image{height:205px}.appliance-card{min-height:290px}.hero-grid{min-height:590px}.hero-points{gap:12px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div><strong>B&amp;P Servicio Técnico</strong> · Soluciones para tu hogar</div>
+      <div class="top-right"><span>Zona Norte</span><span>Presupuesto sin cargo</span></div>
+    </div>
+  </div>
+
+  <header>
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="B&P Servicio Técnico, inicio">
+        <img class="brand-logo" src="https://iili.io/negM1ON.png" alt="B&P Servicio Técnico" fetchpriority="high">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hogar">Mantenimiento del hogar</a>
+        <a href="#electrodomesticos">Electrodomésticos</a>
+        <a href="#nosotros">Por qué elegirnos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <a class="btn btn-yellow" href="https://wa.me/541130460842?text=Hola%20B%26P%2C%20quisiera%20consultar%20por%20un%20servicio." target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">Consultar por WhatsApp
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <img class="hero-logo" src="https://iili.io/negM1ON.png" alt="B&P Servicio Técnico, mantenimiento del hogar y reparación de electrodomésticos">
+          <span class="eyebrow">Mantenimiento y reparaciones</span>
+          <h1>Tu hogar,<br><span>en buenas</span><br>manos.</h1>
+          <p>Soluciones para el mantenimiento de tu casa y la reparación de tus electrodomésticos. Atención profesional para ayudarte a resolver lo que necesitás.</p>
+          <div class="hero-actions">
+            <a class="btn btn-yellow" href="https://wa.me/541130460842?text=Hola%20B%26P%2C%20quisiera%20pedir%20un%20presupuesto." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.5a8.3 8.3 0 0 1-12.2 7.3L4 20l1.2-3.6A8.3 8.3 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c.4 2 2 3.7 4.2 4.5l1.2-1.1 2 1c-.2 1.5-1.2 2.2-2.7 2-3.7-.6-6.4-3.4-6.7-6.1-.1-1.1.6-2 1.5-2.1Z" fill="currentColor"/></svg>
+              Pedir presupuesto
+            </a>
+            <a class="btn btn-outline" href="#hogar">Ver servicios</a>
+          </div>
+          <div class="hero-points">
+            <span><i class="check-dot">✓</i> Presupuesto sin cargo</span>
+            <span><i class="check-dot">✓</i> Zona Norte</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Trabajos de mantenimiento y reparación">
+          <div class="hero-frame" id="heroCarousel">
+            <!-- Fotografías ilustrativas de tareas relacionadas con los servicios; reemplazables por fotos propias de B&P. -->
+            <article class="hero-slide active">
+              <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=2000&q=90" alt="Pintor trabajando en una pared dentro de una casa" fetchpriority="high">
+              <div class="slide-caption"><span>Pintura y mantenimiento</span><h2>Renová los espacios de tu hogar</h2><p>Trabajos para mantener tu casa en buenas condiciones.</p></div>
+            </article>
+            <article class="hero-slide">
+              <img src="https://epfproservices.com/services/painting/6.webp" alt="Pintor profesional renovando una pared de una vivienda" loading="lazy">
+              <div class="slide-caption"><span>Trabajos de pintura</span><h2>Detalles que transforman tu casa</h2><p>Mejoras y mantenimiento para tus ambientes.</p></div>
+            </article>
+            <article class="hero-slide">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/senior-man-repairing-kitchen-cabinet-at-home-royalty-free-image-1742410503.pjpeg?crop=0.66698xw%3A1xh%3Bcenter%2Ctop&resize=1200%3A%2A" alt="Profesional realizando una reparación en un mueble de cocina" loading="lazy">
+              <div class="slide-caption"><span>Reparaciones del hogar</span><h2>Soluciones para cada ambiente</h2><p>Ayuda profesional para el mantenimiento de tu casa.</p></div>
+            </article>
+            <div class="hero-controls" aria-label="Elegir fotografía">
+              <button class="slide-dot active" aria-label="Mostrar imagen 1" data-slide="0"></button>
+              <button class="slide-dot" aria-label="Mostrar imagen 2" data-slide="1"></button>
+              <button class="slide-dot" aria-label="Mostrar imagen 3" data-slide="2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none"><path d="m12 3 7 3v5c0 4.5-3 7.8-7 10-4-2.2-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12 2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><strong>Trabajos garantizados</strong><small>Compromiso con el trabajo</small></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><strong>Respuesta rápida</strong><small>Coordiná tu consulta</small></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M8 12.5 10.5 15 16 9.5M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Presupuesto sin cargo</strong><small>Consultá sin compromiso</small></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><strong>Zona Norte</strong><small>Consultá tu localidad</small></div></div>
+      </div>
+    </div>
+
+    <section class="services-section" id="hogar">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Soluciones para tu casa</span>
+          <h2 class="section-title">Mantenimiento del hogar</h2>
+          <p>Desde una reparación puntual hasta mejoras para tus ambientes. Encontrá el servicio que necesitás y consultanos por WhatsApp.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=700&q=80" alt="Electricista trabajando en una instalación eléctrica" loading="lazy"><span class="num">01</span></div>
+            <div class="service-content"><h3>Electricidad</h3><p>Instalaciones y reparaciones eléctricas para el hogar.</p><a class="text-link wa-service" data-service="electricidad" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://f.hubspotusercontent20.net/hubfs/386626/iStock-615603432.jpg" alt="Plomero reparando el desagüe y las conexiones debajo de una bacha" loading="lazy"><span class="num">02</span></div>
+            <div class="service-content"><h3>Plomería</h3><p>Reparación de fugas, cañerías y sanitarios.</p><a class="text-link wa-service" data-service="plomería" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://epfproservices.com/services/painting/6.webp" alt="Pintor aplicando pintura con rodillo sobre una pared interior" loading="lazy"><span class="num">03</span></div>
+            <div class="service-content"><h3>Pintura</h3><p>Pintura interior y exterior para renovar tus espacios.</p><a class="text-link wa-service" data-service="pintura" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80" alt="Grifería instalada en un baño moderno" loading="lazy"><span class="num">04</span></div>
+            <div class="service-content"><h3>Griferías</h3><p>Reparación y cambio de canillas y griferías.</p><a class="text-link wa-service" data-service="griferías" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80" alt="Baño con instalaciones sanitarias y grifería" loading="lazy"><span class="num">05</span></div>
+            <div class="service-content"><h3>Baños</h3><p>Reparaciones y mejoras para baños y sanitarios.</p><a class="text-link wa-service" data-service="baños y sanitarios" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://hips.hearstapps.com/hmg-prod/images/senior-man-repairing-kitchen-cabinet-at-home-royalty-free-image-1742410503.pjpeg?crop=0.66698xw%3A1xh%3Bcenter%2Ctop&resize=1200%3A%2A" alt="Profesional ajustando una puerta de mueble como parte de un arreglo general del hogar" loading="lazy"><span class="num">06</span></div>
+            <div class="service-content"><h3>Arreglos generales</h3><p>Mejoras y soluciones para distintos desperfectos del hogar.</p><a class="text-link wa-service" data-service="arreglos generales" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=85" alt="Persona realizando limpieza y mantenimiento dentro de una vivienda" loading="lazy"><span class="num">07</span></div>
+            <div class="service-content"><h3>Limpieza de espacios</h3><p>Consultá por tareas de limpieza y mantenimiento de espacios.</p><a class="text-link wa-service" data-service="limpieza de espacios" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img src="https://static.gujaratsamachar.com/content_image/content_image_edbad804-e5b6-41dd-87d1-5de862c38d4b.jpeg" alt="Tanque de almacenamiento de agua instalado sobre una vivienda con conexiones de cañería" loading="lazy"><span class="num">08</span></div>
+            <div class="service-content"><h3>Tanques y cisternas</h3><p>Consultas por trabajos relacionados con tanques de agua y cisternas.</p><a class="text-link wa-service" data-service="tanques y cisternas" href="#">Consultar servicio <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="appliances-section" id="electrodomesticos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Servicio técnico</span>
+          <h2 class="section-title">Reparación de electrodomésticos</h2>
+          <p>¿Un artefacto dejó de funcionar como debería? Contanos qué equipo tenés y cuál es la falla para consultar por el servicio.</p>
+        </div>
+        <div class="appliance-grid">
+          <article class="appliance-card reveal">
+            <img src="https://egiteknik.com/assets/images/teknisi-asia-2.png" alt="Técnico reparando un lavarropas de carga frontal" loading="lazy">
+            <div class="appliance-card-content"><span class="mini-label">Servicio técnico</span><h3>Lavarropas</h3><p>Diagnóstico y reparación de fallas.</p><a class="text-link wa-service" data-service="reparación de lavarropas" href="#" style="color:#ffdf00;margin-top:12px">Consultar →</a></div>
+          </article>
+          <article class="appliance-card reveal">
+            <img src="https://seamarktrading.com/storage/2024/11/Split-Window-Ac-Services-1.png" alt="Técnico revisando y realizando mantenimiento de un aire acondicionado split" loading="lazy">
+            <div class="appliance-card-content"><span class="mini-label">Climatización</span><h3>Aires acondicionados</h3><p>Consultas por instalación y mantenimiento.</p><a class="text-link wa-service" data-service="aires acondicionados" href="#" style="color:#ffdf00;margin-top:12px">Consultar →</a></div>
+          </article>
+          <article class="appliance-card reveal">
+            <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=900&q=85" alt="Técnico realizando mantenimiento de una heladera doméstica" loading="lazy">
+            <div class="appliance-card-content"><span class="mini-label">Refrigeración</span><h3>Heladeras</h3><p>Consultá por el problema de tu equipo.</p><a class="text-link wa-service" data-service="reparación de heladeras" href="#" style="color:#ffdf00;margin-top:12px">Consultar →</a></div>
+          </article>
+          <article class="appliance-card reveal">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=85" alt="Equipamiento y electrodomésticos en una cocina moderna" loading="lazy">
+            <div class="appliance-card-content"><span class="mini-label">Otros equipos</span><h3>Electrodomésticos</h3><p>Consultas por otros artefactos del hogar.</p><a class="text-link wa-service" data-service="reparación de otros electrodomésticos" href="#" style="color:#ffdf00;margin-top:12px">Consultar →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="wide-cta">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div><h2>¿Tenés algo para reparar?</h2><p>Contanos qué necesitás. Consultá por WhatsApp y pedí tu presupuesto sin cargo.</p></div>
+          <a class="btn btn-yellow" href="https://wa.me/541130460842?text=Hola%20B%26P%2C%20quisiera%20consultar%20por%20una%20reparaci%C3%B3n." target="_blank" rel="noopener">Consultar ahora
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="why-section" id="nosotros">
+      <div class="container why-layout">
+        <div class="why-copy reveal">
+          <span class="section-kicker">B&amp;P Servicio Técnico</span>
+          <h2>Un servicio pensado para resolver.</h2>
+          <p>Sabemos que cuando algo se rompe en casa, necesitás encontrar una solución clara. Por eso podés consultarnos por trabajos de mantenimiento y reparación, explicar qué necesitás y coordinar los próximos pasos.</p>
+          <div class="benefit-list">
+            <div class="benefit"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none"><path d="m12 3 7 3v5c0 4.5-3 7.8-7 10-4-2.2-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12 2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><strong>Trabajos garantizados</strong><p>Compromiso con el trabajo realizado.</p></div></div>
+            <div class="benefit"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><strong>Respuesta rápida</strong><p>Consultá para coordinar la atención.</p></div></div>
+            <div class="benefit"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4zM8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><strong>Presupuesto sin cargo</strong><p>Consultá sin compromiso.</p></div></div>
+            <div class="benefit"><span class="benefit-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><strong>Zona Norte</strong><p>Consultá por tu localidad.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">Simple y directo</span>
+          <h2 class="section-title">¿Cómo solicitar un servicio?</h2>
+          <p>Hacer tu consulta es fácil. Escribinos y contanos qué necesitás resolver.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal"><div class="process-num">1</div><h3>Contanos qué necesitás</h3><p>Escribinos por WhatsApp y describí el trabajo o la falla del artefacto.</p></article>
+          <article class="process-card reveal"><div class="process-num">2</div><h3>Coordiná la consulta</h3><p>Compartí los detalles necesarios y consultá la disponibilidad para tu zona.</p></article>
+          <article class="process-card reveal"><div class="process-num">3</div><h3>Pedí tu presupuesto</h3><p>Consultá por el trabajo que necesitás, sin compromiso.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="coverage">
+      <div class="container coverage-layout reveal">
+        <div><span class="section-kicker">Área de atención</span><h2>Estamos en Zona Norte</h2><p>Atención en distintas localidades de Zona Norte. Escribinos para confirmar si llegamos a tu domicilio y coordinar el servicio.</p></div>
+        <a class="btn btn-yellow" href="https://wa.me/541130460842?text=Hola%20B%26P%2C%20quisiera%20consultar%20si%20atienden%20en%20mi%20localidad." target="_blank" rel="noopener">Consultar cobertura</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <span class="section-kicker">Hablemos</span>
+          <h2>¿En qué podemos ayudarte?</h2>
+          <p>Para consultar por un trabajo de mantenimiento o la reparación de un electrodoméstico, escribinos directamente.</p>
+          <div class="contact-line"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><strong>Zona Norte</strong><small>Consultá cobertura por localidad</small></div></div>
+          <div class="contact-line"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5a8.3 8.3 0 0 1-12.2 7.3L4 20l1.2-3.6A8.3 8.3 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><strong>WhatsApp</strong><small>11 3046-0842</small></div></div>
+        </div>
+        <div class="contact-card reveal">
+          <h3>Pedí tu presupuesto</h3>
+          <p>Elegí el botón y contanos qué trabajo necesitás. La consulta es sin compromiso.</p>
+          <a class="btn btn-yellow" href="https://wa.me/541130460842?text=Hola%20B%26P%2C%20quiero%20pedir%20un%20presupuesto%20sin%20cargo." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5a8.3 8.3 0 0 1-12.2 7.3L4 20l1.2-3.6A8.3 8.3 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c.4 2 2 3.7 4.2 4.5l1.2-1.1 2 1c-.2 1.5-1.2 2.2-2.7 2-3.7-.6-6.4-3.4-6.7-6.1-.1-1.1.6-2 1.5-2.1Z" fill="currentColor"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <p class="contact-note">B&amp;P Servicio Técnico · Tu hogar en buenas manos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio" aria-label="B&P Servicio Técnico, inicio">
+            <img class="footer-logo" src="https://iili.io/negM1ON.png" alt="B&P Servicio Técnico">
+          </a>
+          <p>Mantenimiento del hogar y reparación de electrodomésticos. Soluciones rápidas para tu hogar.</p>
+        </div>
+        <div class="footer-links"><h3>Servicios</h3><a href="#hogar">Mantenimiento del hogar</a><a href="#electrodomesticos">Reparación de electrodomésticos</a><a href="#nosotros">Por qué elegirnos</a></div>
+        <div class="footer-links"><h3>Contacto</h3><a href="https://wa.me/541130460842" target="_blank" rel="noopener">WhatsApp: 11 3046-0842</a><a href="#contacto">Zona Norte</a><a href="#contacto">Presupuesto sin cargo</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> B&amp;P Servicio Técnico. Todos los derechos reservados.</span><span>Diseño web profesional · <a href="https://ciborg347.onrender.com/" target="_blank" rel="noopener">Creado y diseñado por CIBORG 347</a></span></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/541130460842?text=Hola%20B%26P%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Abrir WhatsApp para consultar">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C8.86 3 3.02 8.83 3.02 16c0 2.29.6 4.53 1.75 6.51L3 29l6.68-1.75A13 13 0 0 0 16.04 29C23.21 29 29.05 23.17 29.05 16S23.21 3 16.04 3Zm0 23.66c-2.03 0-4.02-.55-5.76-1.6l-.41-.24-3.96 1.04 1.06-3.86-.27-.43A10.63 10.63 0 1 1 16.04 26.66Zm5.84-7.96c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.22.32-.84 1.05-1.03 1.27-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.61-1.9-1.8-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.11-.22.05-.4-.03-.57-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.11 1.32 3.33c.16.22 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.54-.08-.13-.3-.22-.62-.38Z"/></svg>
+  </a>
+  <div class="mobile-cta"><a class="btn btn-yellow" href="https://wa.me/541130460842?text=Hola%20B%26P%2C%20quisiera%20consultar%20por%20un%20servicio." target="_blank" rel="noopener">Consultar por WhatsApp</a></div>
+
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.hero-slide')];
+      const dots = [...document.querySelectorAll('.slide-dot')];
+      const carousel = document.getElementById('heroCarousel');
+      let current = 0;
+      let timer;
+      function showSlide(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === current);
+          dot.setAttribute('aria-pressed', String(i === current));
+        });
+      }
+      function startCarousel() {
+        clearInterval(timer);
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          timer = setInterval(() => showSlide(current + 1), 5500);
+        }
+      }
+      dots.forEach(dot => dot.addEventListener('click', () => {
+        showSlide(Number(dot.dataset.slide));
+        startCarousel();
+      }));
+      carousel.addEventListener('mouseenter', () => clearInterval(timer));
+      carousel.addEventListener('mouseleave', startCarousel);
+      startCarousel();
+
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      menuToggle.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      });
+      navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Abrir menú');
+      }));
+
+      document.querySelectorAll('.wa-service').forEach(link => {
+        const service = link.dataset.service || 'un servicio';
+        const message = `Hola B&P, quisiera consultar por ${service}. ¿Me pueden informar disponibilidad y presupuesto?`;
+        link.href = `https://wa.me/541130460842?text=${encodeURIComponent(message)}`;
+        link.target = '_blank';
+        link.rel = 'noopener';
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const observer = ('IntersectionObserver' in window) ? new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 }) : null;
+      document.querySelectorAll('.reveal').forEach(el => {
+        if (observer) observer.observe(el);
+        else el.classList.add('visible');
+      });
+
+      // Ocultar accesos flotantes cuando el footer entra en pantalla.
+      const footer = document.querySelector('footer');
+      const floatingActions = document.querySelectorAll('.whatsapp-float, .mobile-cta');
+      if (footer && 'IntersectionObserver' in window) {
+        const footerObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            floatingActions.forEach(el => el.classList.toggle('footer-hidden', entry.isIntersecting));
+          });
+        }, { threshold: 0.02 });
+        footerObserver.observe(footer);
+      }
+    })();
+  </script>
+</body>
+</html>
